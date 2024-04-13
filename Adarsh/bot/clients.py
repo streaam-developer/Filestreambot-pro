@@ -28,7 +28,6 @@ async def initialize_clients():
                 api_hash=Var.API_HASH,
                 bot_token=token,
                 sleep_threshold=Var.SLEEP_THRESHOLD,
-                no_updates=True,
                 in_memory=True
             ).start()
             work_loads[client_id] = 0
